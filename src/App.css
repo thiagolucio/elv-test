@@ -1,0 +1,28 @@
+#home {
+  padding: 16px;
+  margin-top: 80px;
+}
+
+#cart {
+  padding: 16px;
+  margin-top: 80px;
+}
+
+.img-list {
+  max-width: auto;
+  max-height: 100px
+}
+.input-number {
+  max-width: 70px;
+
+}
+.form-control-number {
+  padding: 0;
+  text-align: center;
+  border: 1px solid #000;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
+   border: 1px solid #000;
+}

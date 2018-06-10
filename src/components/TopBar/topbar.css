@@ -1,0 +1,10 @@
+.navbar-brand:hover, .navbar-brand:active {text-decoration: underline;}
+.navbar-dark .navbar-nav .nav-link {color:#FFFFFF;}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
+    color:#FFFFFF;
+    text-decoration: underline;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.badge-position {vertical-align: top;margin-top: -7px;}
+a {cursor: pointer}
