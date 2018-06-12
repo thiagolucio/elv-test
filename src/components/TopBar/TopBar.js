@@ -17,6 +17,9 @@ const TopBar = (props) => {
                         <li className="nav-item">
                             <a className="nav-link">Top 5 Products<span className="sr-only">(current)</span></a>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/Fetch" className="nav-link">Fetch Test</Link>
+                        </li>
                     </ul>
                 </div>
                 <ul className="navbar-nav ml-md-auto">
