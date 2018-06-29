@@ -1,0 +1,100 @@
+Crie um carrinho de compras de aplicativo. 
+
+Na página Produtos, você vê a lista de produtos baixado do servidor. 
+
+Cada produto pode ter uma imagem, nome, descrição, itens esquerda e preço.
+
+Você pode adicionar item ao seu carrinho. 
+
+No topo da página há uma barra de navegação com os links:
+- Todos os produtos (all products)
+- Top-5 
+- Ícone visto e carrinho de compras com indicador badge que exibe a quantidade de itens no carrinho. 
+
+- Quando você clica no carrinho de compras você vai para a página do carrinho onde você pode ver todos os produtos adicionados em uma lista
+- Você pode mude a quantidade de cada produto. resumo na página calcula o preço de todos produtos no carrinho.
+
+
+
+
+
+::::::::::: Análise da Aplicação :::::::::::
+
+
+- Listar produtos seguindo layout
+- Pesquisar produtos em tempo real (2way DB)
+- Mostrar os produtos no modo lista e modo grade
+- Mostrar indicativo de icone do carrinho na barra superior quantidade de itens no carrinho
+- Ai clicar no botão de adicionar no carrinho adiciona mais um produto no carrinho (qtd)
+
+
+:::: PROCEDIMENTOS ::::
+
+- Para os TOP5 é aplicar uma regra que mostra no  mesmo link de Home 5 produtos aleatórios. Melhor criar um componente para isso.
+- Grid e Lista tem de aplicar ou injetar estilo de lista e grid (padrao) no layout da pagina. Tipo injetir regra css. 
+- No badge tem de importar de um componente o setState do clicar no botao de adicionar.
+- Na página do carrinho : 
+
+1 - tem de passar o ID do produto e adicionar ele na lista como esperado
+2-  Criar botao de remover a linha do produto e remover e atualizar o valor total da compra
+3-  Permitir aumentar a quantidade deste produto atualizando o valor total da compra
+
+
+
+::::: No Carrinho :::::
+
+
+- Listar os itens que foram selecionados no carrinho (Alterar quantidade usando combo de mais e menos)
+- Permite deletar através de ícone o produto da lista do carrinho. 
+- Mostrar valor total da listagem do carrinho vezes as quantidades selecionadas. 
+
+::::Algumas recomendações analisadas::::
+
+
+- Use create-react-app
+- Use modern javascript (ES6) and patterns
+- Use state management apporach you think is more suitable for this task - ( gerenciamento de estado que achar mais apropriado)
+- We’d like to be able to run your project with the ‘npm start’ command
+from the create-react-app starter kit
+
+
+Expected time to complete is 3–3.5 hrs. You can implement any assumptions that  (até quarta-feira)
+
+you think that are relevant for the task. The main condition that any additional as-
+sumptions made should be stated clearly.
+
+
+
+
+URLS:
+
+https://private-3efa8-products123.apiary-mock.com/products
+
+https://www.google.com.br/search?q=react+bootstrap+4&oq=react+bootstrap+4&aqs=chrome..69i57j69i60j69i65.3087j0j7&sourceid=chrome&ie=UTF-8
+
+https://reactstrap.github.io/
+
+https://getbootstrap.com/docs/4.0/components/navbar/
+
+
+
+
+
+Observações: 
+
+1 - Procurei seu o mais limpo possível. Não instalando nada que não fosse necessário deixando a Aplicação o mais leve possível.
+
+2 - Como no Layout somente foi usado dois símbolos. Não achei necessário implementar uma solução de iconfont como font awesome por exemplo e usei Unicode HTML.
+
+3 - Inicialmente pensei que a solução certa para o Front-End seria o Material-UI (principalmente devido ao botão de adicionar produto) mas depois percebi que os campos de 
+pesquisa e de modelos de botao agrupados para grid e list além de outros detalhes como o thumbnail do card, o badge e o item de menu sublinhado além do campo de 
+quantidade no carrinho provavelmente se tratava de bootstrap, então usei o BS4 neste teste. 
+
+4 - Não foi utilizado SASS, LESS, SCSS devido ao fato de não ter avaliado como necessário para esta aplicação pequena. Poucos estilos então deixei CSS mesmo.
+
+5 - Não utilizei o hasHystory porque no caso desta simulação. Por se tratar de um ecommerce (ou penso que fosse um site de compras) é necessário verificar se um produto
+novo foi adicionado no carregamento da pagina de produtos.  Além do mais. Em uma aplicação pequena como esta não existe uma diferença no desempenho que justifique
+na realidade desta estrutura de teste o uso de BrowserRouter ou hashHistory.
+
+
+
